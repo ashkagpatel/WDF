@@ -1,0 +1,53 @@
+FUNCTIONAL REQUIREMENTS
+
+1. Home Page
+   - Display welcome message.
+   - Provide navigation links.
+
+2. About Page
+   - Display information about StudentHub.
+   - Display mission and features.
+
+3. Register Page
+   - Allow students to create an account.
+
+4. Contact Page
+   - Display contact information.
+   - Allow users to send queries.
+
+5. Login Page
+   - Allow students to log in to the portal.
+
+6. Dashboard Page
+   - Provide access to all student services.
+
+7. Profile Module
+   - Display student profile information.
+
+8. Attendance Module
+   - Display attendance records.
+
+9. Timetable Module
+   - Display class timetable.
+
+10. Fees Module
+    - Display fee details.
+
+11. Result Module
+    - Display examination results.
+
+12. Events Module
+    - Display upcoming events.
+
+13. Admin Module
+    - Manage portal activities.
+
+14. FAQ Module
+    - Display frequently asked questions.
+
+15. Feedback Module
+    - Allow students to submit feedback.
+
+16. Logout Module
+    - Allow users to log out from the portal.
+    - Redirect users to the Home Page.
