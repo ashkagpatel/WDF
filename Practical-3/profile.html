@@ -3,42 +3,80 @@
         <title>Student Profile</title>
         <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
+
         <div id="header">
-        <h1>CHARUSAT</h1>
+            <h1>CHARUSAT</h1>
         </div>
-        <a href="dashboard.html">Back</a>
-        
+
+        <a href="dashboard.html" class="back">Back</a>
 
         <h4>STUDENT PROFILE</h4>
 
-        <ul class = "profile">
-            <li>
-                <span><b>Student Name:</b> Ashka Patel</span>
-                <span><b>Id no:</b> 25CE072</span>
-            </li>
-            <li>
-                <span><b>Gender:</b> Female</span>
-                <span><b>Blood Group:</b> A+</span>
-            </li>
-            <li>
-                <span><b>Birth Date:</b> 15-05-2007</span>
-                <span><b>Birth Place:</b> Surat</span>
-            </li>
-            <li>
-                <span><b>Caste:</b> Talpada Koli</span>
-                <span><b>Religion:</b> Hindu</span>
-            </li>
-            <li>
-                <span><b>Nationality:</b> Indian</span>
-                <span><b>Mother Tongue:</b> Gujarati</span>
-            </li>
-            <li>
-                <span><b>Mobile No:</b> xxxxxxxxxx</span>
-                <span><b>Aadhar no:</b> xxxxxxxxxxxx</span>
-            </li>
-         </ul>
-       
+        <div class="profile-card">
+
+            <h2>Enter Student Information</h2>
+
+            <form>
+
+                <div class="profile-form">
+
+                    <div>
+                        <label>Student Name:</label>
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+
+                    <div>
+                        <label>ID No:</label>
+                        <input type="text" placeholder="Enter ID number">
+                    </div>
+
+                    <div>
+                        <label>Gender:</label>
+                        <input type="text" placeholder="Enter gender">
+                    </div>
+
+                    <div>
+                        <label>Blood Group:</label>
+                        <input type="text" placeholder="Enter blood group">
+                    </div>
+
+                    <div>
+                        <label>Birth Date:</label>
+                        <input type="text" placeholder="DD-MM-YYYY">
+                    </div>
+
+                    <div>
+                        <label>Birth Place:</label>
+                        <input type="text" placeholder="Enter birth place">
+                    </div>
+
+                    <div>
+                        <label>Nationality:</label>
+                        <input type="text" placeholder="Enter nationality">
+                    </div>
+
+                    <div>
+                        <label>Mother Tongue:</label>
+                        <input type="text" placeholder="Enter mother tongue">
+                    </div>
+
+                    <div>
+                        <label>Mobile No:</label>
+                        <input type="tel" placeholder="Enter mobile number">
+                    </div>
+
+                </div>
+
+                <div class="profile-buttons">
+                    <input type="submit" value="Save Profile">
+                    <input type="reset" value="Clear">
+                </div>
+
+            </form>
+
+        </div>
 
     </body>
 </html>

@@ -5,6 +5,158 @@ body{
     min-height: 100vh;
 }
 
+.about-container,.dashboard{ 
+    display: grid; grid-template-columns: 1fr 1fr;
+     gap: 30px; width: 85%; margin: 30px auto; 
+    } 
+    
+.about-card{ background-color: white; border: 2px solid black; 
+    border-radius: 10px; padding: 20px; 
+} 
+
+.about-list{ 
+    display: flex; flex-direction: column; 
+} 
+
+.about-card h4,.profile-card h2{ 
+    text-align: center; color: blue; 
+} 
+
+.about-list p{ 
+    padding: 8px; margin: 5px; border-bottom: 1px solid lightgray; 
+} 
+
+.about-list p:hover{ 
+    background-color: rgb(254, 201, 227); 
+}
+
+#student-profile{ 
+    display: grid; 
+    grid-template-columns: 120px 1fr; 
+    align-items: center; 
+    width: 90%; 
+    margin: 10px auto; 
+    padding: 15px; 
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+    
+.profile-image img{ 
+    width: 90px; 
+    height: 90px; 
+} 
+
+.profile-info{ 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+} 
+.profile-info h2{ 
+    margin: 0; 
+    text-align: right;
+} 
+.profile-info p{ 
+    margin-top: 5px; 
+}
+
+.login-box,.register-box,.contact-box,.feedback-box{ 
+    width: 350px; 
+    margin: 50px auto; 
+    padding: 30px; 
+    background-color: white; 
+    border: 2px solid black; 
+    border-radius: 15px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+    text-align: left; 
+}
+
+.login-box h2{ 
+    text-align: center; 
+    color: red; 
+    margin-bottom: 5px; 
+} 
+
+.login-text{ 
+    text-align: center; 
+    font-size: 13px; 
+    color: gray; 
+}  
+
+.login-box label{ 
+    font-weight: bold; 
+} 
+
+.login-box input[type="email"], .login-box input[type="password"]{ 
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 7px; 
+    border: 1px solid gray; 
+    border-radius: 7px; 
+    box-sizing: border-box; 
+} 
+
+.login-box input[type="email"]:focus, .login-box input[type="password"]:focus{ 
+    border: 2px solid blue; 
+    outline: none; 
+} 
+
+#login{ 
+    width: 100%; 
+    padding: 10px; 
+    background-color: blue; 
+    color: white; 
+    border: none; 
+    border-radius: 7px; 
+    font-weight: bold; 
+    cursor: pointer; 
+} 
+
+#login:hover{ 
+    background-color: darkblue; 
+}
+
+
+.attendance-box table,.result-table table{ 
+    width: 100%; border-collapse: collapse; 
+}
+
+.attendance-box th, .attendance-box td{ 
+    border: 1px solid black; padding: 10px; text-align: center; 
+}
+
+.attendance-box th,.result-table th{ 
+    background-color: rgb(253, 212, 235); 
+}
+
+.attendance-box tr:hover{ 
+    background-color: lightgray; 
+}
+
+
+
+.result-box select{ 
+    padding: 8px; border-radius: 5px; 
+} 
+
+
+
+.result-table{ 
+    display: grid; grid-template-columns: 1fr; 
+} 
+
+
+
+.result-table th, .result-table td{ 
+    border: 1px solid black; padding: 12px; text-align: center; 
+} 
+
+
+.result-table tr:hover{ 
+    background-color: lightgray; 
+}
+
 #header h1{
     text-align: center;
     color: red;
@@ -66,20 +218,40 @@ h4{
     text-align: center;
  }
 
- .profile {
-    list-style: none;
-    padding: 0;
-    width: 500px;
-}
+.profile-card,.attendance-box,.result-card,.result-table-card{ 
+    width: 80%; margin: 30px auto; padding: 25px; background-color: white; 
+    border: 2px solid black; border-radius: 10px; box-shadow: 0 5px 10px rgba(0,0,0,0.2); 
+} 
 
-.profile li {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-}
 
-.profile span {
-    width: 45%;
+
+.profile-form{ 
+    display: grid; grid-template-columns: 1fr 1fr; gap: 20px; 
+} 
+
+.profile-form div{ 
+    display: flex; flex-direction: column;
+} 
+
+.profile-form label{ 
+    margin-bottom: 5px; font-weight: bold; 
+} 
+
+.profile-form input{ 
+    padding: 8px; border: 1px solid gray; border-radius: 5px; 
+} 
+
+.profile-buttons,.result-box{ display: flex; justify-content: center; 
+    gap: 15px; margin-top: 25px; 
+} 
+
+.profile-buttons input,.result-box input{ 
+    padding: 10px 25px; border: none; border-radius: 5px; 
+    background-color: blue; color: white; 
+} 
+
+.profile-buttons input:hover{ 
+    background-color: darkblue; 
 }
 
 table,th,td
@@ -89,6 +261,54 @@ table,th,td
     text-align: center;
 }
 
+.welcome{ 
+    text-align: center; margin-top: 30px; 
+} 
 
+.dashboard-title{ 
+    text-align: center; color: blue; 
+} 
+
+.logout{ 
+    text-align: right; margin-right: 30px; 
+} 
+
+.logout a{ 
+    text-decoration: none; color: red; 
+} 
+.logout a:hover{ 
+    color: black; 
+}  
+
+
+
+.card{ 
+    background-color: white; border: 2px solid black; border-radius: 15px; padding: 25px; 
+    text-align: center; box-shadow: 0 5px 10px rgba(0,0,0,0.2); 
+} 
+
+.card{ 
+    display: flex; flex-direction: column; align-items: center; justify-content: space-between; 
+} 
+ 
+.card h3{ 
+    color: red; margin: 5px; 
+} 
+
+.card p{ 
+    color: gray; 
+} 
+
+.card a{ 
+    text-decoration: none; background-color: blue; color: white; padding: 8px 25px; border-radius: 7px; 
+} 
+
+.card:hover{ 
+    transform: translateY(-5px); box-shadow: 0 8px 15px rgba(0,0,0,0.3); 
+} 
+
+.card a:hover{ 
+    background-color: darkblue; 
+}
      
 
