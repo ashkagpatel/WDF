@@ -1,0 +1,180 @@
+<html>
+    <head>
+        <title>Student Profile</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div id="header">
+            <h1>CHARUSAT</h1>
+        </div>
+
+        <a href="dashboard.html" class="back">Back</a>
+
+        <h4>STUDENT PROFILE</h4>
+
+        <div class="profile-card">
+
+            <h2>Enter Student Information</h2>
+
+            <form id="profileForm">
+
+                <div class="profile-form">
+
+                    <div>
+                        <label>Student Name:</label>
+                        <input type="text" id="studentname" placeholder="Enter your name">
+                    </div>
+
+                    <div>
+                        <label>ID No:</label>
+                        <input type="text" id="idno" placeholder="Enter ID number">
+                    </div>
+
+                    <div>
+                        <label>Gender:</label>
+                        <input type="text" id="gender" placeholder="Enter gender">
+                    </div>
+
+                    <div>
+                        <label>Blood Group:</label>
+                        <input type="text" id="bloodgroup" placeholder="Enter blood group">
+                    </div>
+
+                    <div>
+                        <label>Birth Date:</label>
+                        <input type="text" id="birthdate" placeholder="DD-MM-YYYY">
+                    </div>
+
+                    <div>
+                        <label>Birth Place:</label>
+                        <input type="text" id="birthplace" placeholder="Enter birth place">
+                    </div>
+
+                    <div>
+                        <label>Nationality:</label>
+                        <input type="text" id="nationality" placeholder="Enter nationality">
+                    </div>
+
+                    <div>
+                        <label>Mother Tongue:</label>
+                        <input type="text" id="mothertongue" placeholder="Enter mother tongue">
+                    </div>
+
+                    <div>
+                        <label>Mobile No:</label>
+                        <input type="tel" id="mobileno" placeholder="Enter mobile number">
+                    </div>
+
+                </div>
+
+                <div class="profile-buttons">
+                    <input type="submit" id="submit" value="Save Profile">
+                    <input type="reset" id="reset" value="Clear">
+                </div>
+
+            </form>
+
+        </div>
+
+<div id="profileModal" class="modal">
+
+    <div class="modal-content">
+
+        <h2>Profile Saved!</h2>
+
+        <p>Your student profile has been saved successfully.</p>
+
+        <button id="closeModal">OK</button>
+
+    </div>
+
+</div>
+
+    <script>
+        const form = document.querySelector("#profileForm");
+
+const modal = document.querySelector("#profileModal");
+
+const closeModal = document.querySelector("#closeModal");
+
+
+form.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const studentname = document.querySelector("#studentname").value.trim();
+    const idno = document.querySelector("#idno").value.trim();
+    const gender = document.querySelector("#gender").value.trim();
+    const bloodgroup = document.querySelector("#bloodgroup").value.trim();
+    const birthdate = document.querySelector("#birthdate").value.trim();
+    const birthplace = document.querySelector("#birthplace").value.trim();
+    const nationality = document.querySelector("#nationality").value.trim();
+    const mothertongue = document.querySelector("#mothertongue").value.trim();
+    const mobileno = document.querySelector("#mobileno").value.trim();
+
+    if (
+        studentname === "" ||
+        idno === "" ||
+        gender === "" ||
+        bloodgroup === "" ||
+        birthdate === "" ||
+        birthplace === "" ||
+        nationality === "" ||
+        mothertongue === "" ||
+        mobileno === ""
+    ) {
+        alert("Please fill all the details.");
+        return;
+    }
+
+    const profile = {
+        studentname: studentname,
+        idno: idno,
+        gender: gender,
+        bloodgroup: bloodgroup,
+        birthdate: birthdate,
+        birthplace: birthplace,
+        nationality: nationality,
+        mothertongue: mothertongue,
+        mobileno: mobileno
+    };
+
+
+    localStorage.setItem("profile", JSON.stringify(profile));
+
+
+
+    modal.style.display = "block";
+
+});
+
+
+closeModal.addEventListener("click", function() {
+
+    modal.style.display = "none";
+
+});
+
+const savedProfile = localStorage.getItem("profile");
+
+if (savedProfile) {
+
+    const profile = JSON.parse(savedProfile);
+
+    document.querySelector("#studentname").value = profile.studentname;
+    document.querySelector("#idno").value = profile.idno;
+    document.querySelector("#gender").value = profile.gender;
+    document.querySelector("#bloodgroup").value = profile.bloodgroup;
+    document.querySelector("#birthdate").value = profile.birthdate;
+    document.querySelector("#birthplace").value = profile.birthplace;
+    document.querySelector("#nationality").value = profile.nationality;
+    document.querySelector("#mothertongue").value = profile.mothertongue;
+    document.querySelector("#mobileno").value = profile.mobileno;
+
+}
+    </script>
+     
+    </body>
+</html>
