@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>FAQs</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+        <h1>CHARUSAT</h1>
+        </div>
+        
+        <a href="dashboard.html">Back</a>
+        
+        
+           <h4>Frequently Ask Questions</h4>
+    
+        <br>
+        <div id="content">
+             <p>
+                The FAQ page provides answers to common questions
+                related to the StudentHub Portal.
+            </p>
+
+            <h4>FAQs</h4>
+
+            
+                 <div class="faq-item">
+                    <button class="faq-que" type="button" aria-expanded="false">How do I register?</button>
+                   <div class="faq-ans" hidden>Click on the Register page and fill out the registration form.</div>
+                 </div>
+
+                 <br>
+
+                <div class="faq-item">
+                    <button class="faq-que" type="button" aria-expanded="false">How can I log in?</button>
+                   <div class="faq-ans" hidden>Enter your email or student ID and password on the Login page.</div>
+                </div>
+
+                <br>
+
+                <div class="faq-item">
+                    <button class="faq-que" type="button" aria-expanded="false">How can I check my attendance?</button>
+                   <div class="faq-ans" hidden>Open the Attendance module from the Dashboard.</div>
+                </div>
+
+                <br>
+
+                <div class="faq-item">
+                    <button class="faq-que" type="button" aria-expanded="false">Who should I contact for support?</button>
+                   <div class="faq-ans" hidden>Visit the Contact Us page or contact the StudentHub Support Team.</div>
+                </div>
+                
+        </div>
+        
+        <script>
+console.log("JavaScript connected");
+const content=document.querySelector("#content");
+content.addEventListener("click",event=>{
+    const que = event.target.closest(".faq-que");
+    if(!que)
+    {
+        return;
+    }
+
+    const ans=que.nextElementSibling;
+
+    const isOpen=que.getAttribute("aria-expanded")=="true";
+
+    que.setAttribute("aria-expanded",String(!isOpen));
+
+    ans.hidden=isOpen;
+});
+   </script>
+    </body>
+</html>
