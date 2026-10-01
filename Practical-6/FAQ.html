@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>FAQs</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+        <h1>CHARUSAT</h1>
+        </div>
+        
+        <a href="dashboard.html">Back</a>
+        
+        
+           <h4>Frequently Ask Questions</h4>
+    
+        <br>
+        <div id="content">
+             <p>
+                The FAQ page provides answers to common questions
+                related to the StudentHub Portal.
+            </p>
+
+            <h4>FAQs</h4>
+
+            <input type="text" id="faqSearch" placeholder="Search FAQ">
+
+            <div id="faqContainer"></div>
+
+            <div id="faqPagination">
+    <button id="faqPrev">Previous</button>
+    <span id="faqPageNumber">1/2</span>
+    <button id="faqNext">Next</button>
+</div>
+                
+        </div>
+        
+    <!--   <script>
+console.log("JavaScript connected");
+const content=document.querySelector("#content");
+content.addEventListener("click",event=>{
+    const que = event.target.closest(".faq-que");
+    if(!que)
+    {
+        return;
+    }
+
+    const ans=que.nextElementSibling;
+
+    const isOpen=que.getAttribute("aria-expanded")=="true";
+
+    que.setAttribute("aria-expanded",String(!isOpen));
+
+    ans.hidden=isOpen;
+});
+   </script>-->
+   <script src="script.js"></script>
+    </body>
+</html>

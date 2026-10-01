@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+        <h1>STUDENT REGISTRATION</h1>
+        </div>
+    </br>
+
+       <form id="registrationform" action="login.html" method="post" class="register-box">
+
+        <label>Full Name:-</label>
+       <input type="text" id="name" placeholder="Enter full name">
+       <p id="nameerror" class="error"></p>
+
+       <label>Email Address:-</label>
+        <input type="email" id="email" placeholder="Enter Email Address" required>
+        <p id="emailerror" class="error"></p>
+
+        <label>Password:-</label>
+        <input type="password" id="ps" placeholder="Enter Password">
+        <p id="passworderror" class="error"></p>
+
+         <label>Confirm Password:-</label>
+         <input type="password" id="cps" placeholder="Confirm your password">
+         <p id="cpassworderror" class="error"></p>
+
+         <label for="course">Course</label>
+      <select id="course" required>
+        <option value="">Select Course</option>
+        <option value="B.Tech IT">B.Tech IT</option>
+        <option value="B.Tech CE">B.Tech CE</option>
+        <option value="B.Tech CSE">B.Tech CSE</option>
+      </select>
+      <p class="error" id="courseError"></p>
+
+
+      <label for="year">Year</label>
+      <select id="year" required>
+        <option value="">Select Year</option>
+        <option value="1st Year">1st Year</option>
+        <option value="2nd Year">2nd Year</option>
+        <option value="3rd Year">3rd Year</option>
+        <option value="4th Year">4th Year</option>
+      </select>
+      <p class="error" id="yearError"></p>
+
+
+      <label>Gender</label>
+
+      <div class="radio-group">
+        <label>
+          <input type="radio" name="gender" value="Male">
+          Male
+        </label>
+
+        <label>
+          <input type="radio" name="gender" value="Female">
+          Female
+        </label>
+
+        <label>
+          <input type="radio" name="gender" value="Other">
+          Other
+        </label>
+      </div>
+
+      <p class="error" id="genderError"></p>
+
+
+      <div class="terms">
+        <label>
+          <input type="checkbox" id="terms">
+          I accept the Terms & Conditions
+        </label>
+      </div>
+
+      <p class="error" id="termsError"></p>
+
+
+      <button type="submit">Register</button>
+      <button type="reset">Reset</button>
+
+      <p id="finalMessage"></p>
+
+
+    </form>
+
+      <script src="script.js"></script>
+
+
+    </body>
+</html>

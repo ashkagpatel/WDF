@@ -1,0 +1,18 @@
+[
+    {
+        "question": "How do I register?",
+        "answer": "Click on the Register page and fill out the registration form."
+    },
+    {
+        "question": "How can I log in?",
+        "answer": "Enter your email or student ID and password on the Login page."
+    },
+    {
+        "question": "How can I check my attendance?",
+        "answer": "Open the Attendance module from the Dashboard."
+    },
+    {
+        "question": "Who should I contact for support?",
+        "answer": "Visit the Contact Us page or contact the StudentHub Support Team."
+    }
+]
