@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Technical Fest",
+        "date": "12 August 2026",
+        "category": "Technical"
+    },
+    {
+        "title": "Sports Day",
+        "date": "20 August 2026",
+        "category": "Sports"
+    },
+    {
+        "title": "Web Development Workshop",
+        "date": "25 August 2026",
+        "category": "Workshop"
+    },
+    {
+        "title": "Hackathon",
+        "date": "30 August 2026",
+        "category": "Technical"
+    },
+    {
+        "title": "Annual Function",
+        "date": "10 September 2026",
+        "category": "Cultural"
+    }
+]
