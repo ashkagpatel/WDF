@@ -13,3 +13,4 @@ This repository contains all practicals of the StudentHub Portal project.
 - Practical 5: Forms, JS validation
 - Practical 6: Rendering External JSON Data using Fetch API, Search and Filter
 - Practical 7: PHP Form Processing with Server-Side Validation and CSV/JSON File Storage
+- Practical 8: MySQL Schema Design, ER Model and Database Connectivity
