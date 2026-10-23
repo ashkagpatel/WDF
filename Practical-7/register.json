@@ -6,5 +6,21 @@
         "course": "B.Tech CE",
         "year": "2nd Year",
         "gender": "Female"
+    },
+    {
+        "name": "ashka",
+        "email": "abc@cf.in",
+        "password": "$2y$10$p8Ii7RgTjMLRRMC4oZi2\/eQLZCzN6PHQVmyL0bsccfXFJRZC1wAFa",
+        "course": "B.Tech CE",
+        "year": "2nd Year",
+        "gender": "Female"
+    },
+    {
+        "name": "ashka",
+        "email": "abc@cf.in",
+        "password": "$2y$10$dVv6C.0zhgfSRsU8.Aef\/Osx4Va2WfW4nWXJBtTgNl8YfZzU5VX\/.",
+        "course": "B.Tech CE",
+        "year": "2nd Year",
+        "gender": "Female"
     }
 ]
