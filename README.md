@@ -17,3 +17,4 @@ This repository contains all practicals of the StudentHub Portal project.
 - Practical 9: Secure User Registration with Database Insert,Duplicate Email Check, and Password Hashing
 - Practical 10: Secure Login/Logout with Sessions, Role-Based Access, Timeout, and Remember-Me Token
 - Practical 11: Student Management CRUD with Search, Filter, and MySql Statements
+- Practical 12: Event Management CRUD with Poster Upload and File Validation
